@@ -4,10 +4,10 @@
 #include <iostream>
 #include <vector>
 
-double kf =0.0197, kr = 0.0122, lf = .14784, lr = .10716,l = .255, m = 2.0302, acc, x_tmp, utmp = 0;//
-
+double kf =19.7, kr = 12.2, lf = .14784, lr = .10716,l = .255, m = 2.0302, acc, x_tmp, utmp = 0;//
+//kf =0.0197, kr = 0.0122,
 double u_vir = 0;// virtual of tire_angle
-double dt = 0.1, T = 30 / dt;//dt:制御周期 T:not used
+double dt = 0.05, T = 30 / dt;//dt:制御周期 T:not used
 int N = 30, Ns = 500, vkmh = 3.6;// N:予測ホライズン長さ Ns:サンプル系列数
 double v;// = vkmh / 3.6;//速度 m/s
 //double v1;
